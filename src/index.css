@@ -175,16 +175,12 @@ All colors MUST be HSL.
   }
 
   /* Utility classes for animations */
-  .animate-typing {
-  animation: typing 3s steps(40, end) forwards, caret-hide 0s 3s forwards;
+ .animate-typing {
+  animation: typing 3s steps(40, end) forwards;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid hsl(var(--primary));
   width: 0;
-}
-
-  @keyframes caret-hide {
-    to { border-right: none; }
+  border-right: none; 
   }
 
   .animate-glow {
