@@ -80,10 +80,49 @@ export default {
             height: "0",
           },
         },
+        // SIH Results custom animations
+        "typing": {
+          "from": { "width": "0" },
+          "to": { "width": "100%" }
+        },
+        "glow": {
+          "0%, 100%": { "text-shadow": "0 0 10px hsl(var(--primary-glow) / 0.5)" },
+          "50%": { "text-shadow": "0 0 20px hsl(var(--primary-glow) / 0.8), 0 0 30px hsl(var(--primary-glow) / 0.6)" }
+        },
+        "shimmer": {
+          "0%": { "background-position": "-200% 0" },
+          "100%": { "background-position": "200% 0" }
+        },
+        "slideInUp": {
+          "from": { 
+            "opacity": "0", 
+            "transform": "translateY(20px)" 
+          },
+          "to": { 
+            "opacity": "1", 
+            "transform": "translateY(0)" 
+          }
+        },
+        "fadeInScale": {
+          "from": { 
+            "opacity": "0", 
+            "transform": "scale(0.95)" 
+          },
+          "to": { 
+            "opacity": "1", 
+            "transform": "scale(1)" 
+          }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        // SIH Results animations
+        "typing": "typing 3s steps(40, end)",
+        "glow": "glow 2s ease-in-out infinite",
+        "shimmer": "shimmer 2s infinite",
+        "slide-in-up": "slideInUp 0.6s ease-out",
+        "fade-in-scale": "fadeInScale 0.4s ease-out"
       },
     },
   },
