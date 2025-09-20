@@ -268,7 +268,7 @@ export const ResultsTable = ({ searchQuery }: ResultsTableProps) => {
             onClick={loadMore} 
             disabled={loading}
             size="lg"
-            className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground shadow-lg hover-lift"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover-lift"
           >
             {loading ? (
               <>

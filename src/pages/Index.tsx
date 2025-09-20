@@ -13,7 +13,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">IIC</span>
               </div>
               <div>
@@ -33,8 +33,7 @@ const Index = () => {
       <main className="container mx-auto px-4 py-8">
         {/* Animated Banner */}
         <AnimatedBanner 
-          text="SIH Results Published" 
-          emoji="🎉" 
+          text="SIH Results Published"
         />
 
         {/* Search Filter */}
@@ -53,7 +52,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-8">
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">IIC</span>
               </div>
               <span className="font-semibold text-foreground">Institution's Innovation Council</span>
@@ -63,7 +62,7 @@ const Index = () => {
               <p className="mt-1">Fostering innovation and entrepreneurship among students</p>
             </div>
             <div className="flex items-center justify-center gap-6 text-xs text-muted-foreground">
-              <span>© 2024 IIC-NITT</span>
+              <span>© 2025 IIC-NITT</span>
               <span>Smart India Hackathon Results</span>
               <span>All Rights Reserved</span>
             </div>
