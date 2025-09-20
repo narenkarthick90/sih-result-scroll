@@ -13,7 +13,7 @@ export const AnimatedBanner = ({ text, emoji = "" }: AnimatedBannerProps) => {
     // Start typing animation after component mounts
     const timer1 = setTimeout(() => setIsVisible(true), 300);
     // Start glow effect after typing completes
-    const timer2 = setTimeout(() => setShowGlow(true), 3000);
+    const timer2 = setTimeout(() => setShowGlow(true), 2000);
     
     return () => {
       clearTimeout(timer1);
