@@ -175,31 +175,33 @@ All colors MUST be HSL.
   }
 
   /* Utility classes for animations */
- .animate-typing {
-  animation: typing 3s steps(40, end) forwards;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  border-right: none; 
-  }
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-  .animate-glow {
-    animation: glow 2s ease-in-out infinite;
-  }
+.animate-fade-in {
+  animation: fade-in 0.3s forwards;
+}
 
-  .animate-shimmer {
-    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.1), transparent);
-    background-size: 200% 100%;
-    animation: shimmer 2s infinite;
-  }
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 10px rgba(255,255,255,0.6); }
+  50% { text-shadow: 0 0 20px rgba(255,255,255,1); }
+}
 
-  .animate-slide-in-up {
-    animation: slideInUp 0.6s ease-out;
-  }
+.animate-glow {
+  animation: glow 1.5s infinite alternate;
+}
 
-  .animate-fade-in-scale {
-    animation: fadeInScale 0.4s ease-out;
-  }
+@keyframes fade-in-scale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in-scale {
+  animation: fade-in-scale 0.5s forwards;
+}
+
 
   /* Hover effects */
   .hover-lift {
