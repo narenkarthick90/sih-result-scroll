@@ -16,6 +16,7 @@ interface ResultsTableProps {
 }
 
 export const ResultsTable = ({ searchQuery }: ResultsTableProps) => {
+  // Force cache refresh - all ranking removed
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const teamsPerPage = 10;
