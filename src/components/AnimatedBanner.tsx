@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 interface AnimatedBannerProps {
   text: string;
-  emoji?: string;
 }
 
 export const AnimatedBanner = ({ text }: AnimatedBannerProps) => {
@@ -36,7 +35,7 @@ export const AnimatedBanner = ({ text }: AnimatedBannerProps) => {
           >
             {text}
           </span>
-          {showGlow)}
+          
         </h1>
         
         {showGlow && (
