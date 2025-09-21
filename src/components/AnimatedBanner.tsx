@@ -5,7 +5,7 @@ interface AnimatedBannerProps {
   emoji?: string;
 }
 
-export const AnimatedBanner = ({ text, emoji = "" }: AnimatedBannerProps) => {
+export const AnimatedBanner = ({ text }: AnimatedBannerProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const [showGlow, setShowGlow] = useState(false);
 
@@ -36,11 +36,7 @@ export const AnimatedBanner = ({ text, emoji = "" }: AnimatedBannerProps) => {
           >
             {text}
           </span>
-          {showGlow && (
-            <span className="ml-4 inline-block animate-bounce text-2xl md:text-4xl">
-              {emoji}
-            </span>
-          )}
+          {showGlow)}
         </h1>
         
         {showGlow && (
