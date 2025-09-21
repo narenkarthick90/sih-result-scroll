@@ -195,198 +195,36 @@ export const ResultsTable = ({ searchQuery }: ResultsTableProps) => {
                 <TableHead className="text-left font-bold text-foreground">Domain</TableHead>
               </TableRow>
             </TableHeader>
-            <TableBody>
-              {matchesSearch("Code Warriors 1", "AI-powered disease diagnosis system", "Healthcare & Biomedical") && shouldDisplay(0) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(1)}`} style={{ animationDelay: '0s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(1)}</div></TableCell>
-                  <TableCell className="font-semibold">Code Warriors 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="AI-powered disease diagnosis system">AI-powered disease diagnosis system</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241001</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Healthcare & Biomedical</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Tech Titans 1", "Smart classroom management platform", "Education Technology") && shouldDisplay(1) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(2)}`} style={{ animationDelay: '0.1s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(2)}</div></TableCell>
-                  <TableCell className="font-semibold">Tech Titans 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Smart classroom management platform">Smart classroom management platform</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241002</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Education Technology</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Innovation Hub 1", "Precision agriculture monitoring", "Agriculture & Food Tech") && shouldDisplay(2) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(3)}`} style={{ animationDelay: '0.2s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(3)}</div></TableCell>
-                  <TableCell className="font-semibold">Innovation Hub 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Precision agriculture monitoring">Precision agriculture monitoring</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241003</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Agriculture & Food Tech</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Digital Dynamos 1", "IoT-based home automation", "Smart Automation") && shouldDisplay(3) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(4)}`} style={{ animationDelay: '0.3s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(4)}</div></TableCell>
-                  <TableCell className="font-semibold">Digital Dynamos 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="IoT-based home automation">IoT-based home automation</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241004</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Smart Automation</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Smart Coders 1", "Blockchain payment gateway", "Fintech & Blockchain") && shouldDisplay(4) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(5)}`} style={{ animationDelay: '0.4s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(5)}</div></TableCell>
-                  <TableCell className="font-semibold">Smart Coders 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Blockchain payment gateway">Blockchain payment gateway</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241005</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Fintech & Blockchain</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Future Builders 1", "Solar energy optimization", "Clean Energy") && shouldDisplay(5) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(6)}`} style={{ animationDelay: '0.5s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(6)}</div></TableCell>
-                  <TableCell className="font-semibold">Future Builders 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Solar energy optimization">Solar energy optimization</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241006</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Clean Energy</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Cyber Knights 1", "Traffic management system", "Smart Cities") && shouldDisplay(6) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(7)}`} style={{ animationDelay: '0.6s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(7)}</div></TableCell>
-                  <TableCell className="font-semibold">Cyber Knights 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Traffic management system">Traffic management system</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241007</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Smart Cities</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Data Wizards 1", "Network security framework", "Cybersecurity") && shouldDisplay(7) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(8)}`} style={{ animationDelay: '0.7s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(8)}</div></TableCell>
-                  <TableCell className="font-semibold">Data Wizards 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Network security framework">Network security framework</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241008</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Cybersecurity</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("AI Pioneers 1", "Virtual reality training", "AR/VR & Gaming") && shouldDisplay(8) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(9)}`} style={{ animationDelay: '0.8s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(9)}</div></TableCell>
-                  <TableCell className="font-semibold">AI Pioneers 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Virtual reality training">Virtual reality training</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241009</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">AR/VR & Gaming</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Tech Crusaders 1", "Community welfare app", "Social Innovation") && shouldDisplay(9) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(10)}`} style={{ animationDelay: '0.9s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(10)}</div></TableCell>
-                  <TableCell className="font-semibold">Tech Crusaders 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Community welfare app">Community welfare app</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241010</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Social Innovation</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Binary Beasts 1", "AI-powered disease diagnosis system", "Healthcare & Biomedical") && shouldDisplay(10) && (
-                <TableRow className={`table-row-hover border-b border-border/50 ${getRankStyle(11)}`} style={{ animationDelay: '1s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(11)}</div></TableCell>
-                  <TableCell className="font-semibold">Binary Beasts 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="AI-powered disease diagnosis system">AI-powered disease diagnosis system</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241011</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Healthcare & Biomedical</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Logic Lords 1", "Smart classroom management platform", "Education Technology") && shouldDisplay(11) && (
-                <TableRow className="table-row-hover border-b border-border/50" style={{ animationDelay: '1.1s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(12)}</div></TableCell>
-                  <TableCell className="font-semibold">Logic Lords 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Smart classroom management platform">Smart classroom management platform</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241012</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Education Technology</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Neural Networks 1", "Precision agriculture monitoring", "Agriculture & Food Tech") && shouldDisplay(12) && (
-                <TableRow className="table-row-hover border-b border-border/50" style={{ animationDelay: '1.2s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(13)}</div></TableCell>
-                  <TableCell className="font-semibold">Neural Networks 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Precision agriculture monitoring">Precision agriculture monitoring</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241013</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Agriculture & Food Tech</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Quantum Leap 1", "IoT-based home automation", "Smart Automation") && shouldDisplay(13) && (
-                <TableRow className="table-row-hover border-b border-border/50" style={{ animationDelay: '1.3s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(14)}</div></TableCell>
-                  <TableCell className="font-semibold">Quantum Leap 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="IoT-based home automation">IoT-based home automation</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241014</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Smart Automation</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Pixel Perfect 1", "Blockchain payment gateway", "Fintech & Blockchain") && shouldDisplay(14) && (
-                <TableRow className="table-row-hover border-b border-border/50" style={{ animationDelay: '1.4s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(15)}</div></TableCell>
-                  <TableCell className="font-semibold">Pixel Perfect 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Blockchain payment gateway">Blockchain payment gateway</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241015</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Fintech & Blockchain</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Syntax Squad 1", "Solar energy optimization", "Clean Energy") && shouldDisplay(15) && (
-                <TableRow className="table-row-hover border-b border-border/50" style={{ animationDelay: '1.5s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(16)}</div></TableCell>
-                  <TableCell className="font-semibold">Syntax Squad 1</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Solar energy optimization">Solar energy optimization</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241016</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Clean Energy</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Code Warriors 2", "Traffic management system", "Smart Cities") && shouldDisplay(16) && (
-                <TableRow className="table-row-hover border-b border-border/50" style={{ animationDelay: '1.6s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(17)}</div></TableCell>
-                  <TableCell className="font-semibold">Code Warriors 2</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Traffic management system">Traffic management system</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241017</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Smart Cities</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Tech Titans 2", "Network security framework", "Cybersecurity") && shouldDisplay(17) && (
-                <TableRow className="table-row-hover border-b border-border/50" style={{ animationDelay: '1.7s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(18)}</div></TableCell>
-                  <TableCell className="font-semibold">Tech Titans 2</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Network security framework">Network security framework</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241018</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Cybersecurity</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Innovation Hub 2", "Virtual reality training", "AR/VR & Gaming") && shouldDisplay(18) && (
-                <TableRow className="table-row-hover border-b border-border/50" style={{ animationDelay: '1.8s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(19)}</div></TableCell>
-                  <TableCell className="font-semibold">Innovation Hub 2</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Virtual reality training">Virtual reality training</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241019</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">AR/VR & Gaming</span></TableCell>
-                </TableRow>
-              )}
-              {matchesSearch("Digital Dynamos 2", "Community welfare app", "Social Innovation") && shouldDisplay(19) && (
-                <TableRow className="table-row-hover border-b border-border/50" style={{ animationDelay: '1.9s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(20)}</div></TableCell>
-                  <TableCell className="font-semibold">Digital Dynamos 2</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="Community welfare app">Community welfare app</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241020</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Social Innovation</span></TableCell>
-                </TableRow>
-              )}
-              {/* Continue similarly for all remaining 30 rows with appropriate animation delays and data */}
-              {matchesSearch("Smart Coders 2", "AI-powered disease diagnosis system", "Healthcare & Biomedical") && shouldDisplay(20) && (
-                <TableRow className="table-row-hover border-b border-border/50" style={{ animationDelay: '2s', animation: 'slideInUp 0.6s ease-out forwards' }}>
-                  <TableCell className="py-4"><div className="flex items-center gap-2">{getRankIcon(21)}</div></TableCell>
-                  <TableCell className="font-semibold">Smart Coders 2</TableCell>
-                  <TableCell className="text-muted-foreground max-w-xs"><div className="truncate" title="AI-powered disease diagnosis system">AI-powered disease diagnosis system</div></TableCell>
-                  <TableCell className="font-mono text-sm">SIH20241021</TableCell>
-                  <TableCell><span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">Healthcare & Biomedical</span></TableCell>
-                </TableRow>
-              )}
-              {/* ... and so on for all 50 rows */}
+           <TableBody>
+              {allTeams
+                .filter(team => matchesSearch(team.teamName, team.problemStatement, team.domain))
+                .slice(0, currentPage * teamsPerPage)
+                .map((team, index) => (
+                  <TableRow
+                    key={team.problemId}
+                    className={`table-row-hover border-b border-border/50 ${getRankStyle(team.rank)}`}
+                    style={{
+                      animationDelay: `${index * 0.1}s`,
+                      animation: "slideInUp 0.6s ease-out forwards",
+                    }}
+                  >
+                    <TableCell className="py-4">
+                      <div className="flex items-center gap-2">{getRankIcon(team.rank)}</div>
+                    </TableCell>
+                    <TableCell className="font-semibold">{team.teamName}</TableCell>
+                    <TableCell className="text-muted-foreground max-w-xs">
+                      <div className="truncate" title={team.problemStatement}>
+                        {team.problemStatement}
+                      </div>
+                    </TableCell>
+                    <TableCell className="font-mono text-sm">{team.problemId}</TableCell>
+                    <TableCell>
+                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">
+                        {team.domain}
+                      </span>
+                    </TableCell>
+                  </TableRow>
+                ))}
             </TableBody>
           </Table>
         </CardContent>
