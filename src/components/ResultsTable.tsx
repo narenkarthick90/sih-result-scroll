@@ -123,7 +123,7 @@ export const ResultsTable = ({ searchQuery }: ResultsTableProps) => {
 
   // Count displayed results
   let displayedCount = 0;
-  for (let i = 0; i < allTeams.length; i++) {
+  for (let i = 0; i < 51; i++) {
     if (matchesSearch(allTeams[i].teamName, allTeams[i].problemStatement, allTeams[i].domain) && shouldDisplay(displayedCount)) {
       displayedCount++;
     }
