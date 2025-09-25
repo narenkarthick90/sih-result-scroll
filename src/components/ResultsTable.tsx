@@ -45,7 +45,7 @@ export const ResultsTable = ({ searchQuery }: ResultsTableProps) => {
 
   // All team data with status
   const allTeams = [
-    { teamName: "CodePlay", problemStatement: "AI-Powered Personal Farming Assistant for Kerala Farmers", problemId: "SIH25074", status: "Shortlisted" },
+    { teamName: "Atmanirbhar", problemStatement: "FloatChat - AI-Powered Conversational Interface for ARGO Ocean Data Discovery and Visualization", problemId: "SIH25040", status: "Shortlisted" },
     { teamName: "TECHSEA", problemStatement: "Development of a Digital Mental Health and Psychological Support System for Students in Higher Education", problemId: "SIH25092", status: "Shortlisted" },
     { teamName: "ByteForce", problemStatement: "Maximizing Section Throughput Using Al-Powered Precise Train Traffic Control", problemId: "SIH25022", status: "Shortlisted" },
     { teamName: "Hexabyte", problemStatement: "Smart Tourist Safety Monitoring & Incident Response System using Al, Geo-Fencing, and Blockchain-based Digital ID", problemId: "SIH25002", status: "Shortlisted" },
@@ -78,7 +78,7 @@ export const ResultsTable = ({ searchQuery }: ResultsTableProps) => {
     { teamName: "InnovatHers", problemStatement: "Telemedicine Access for Rural Healthcare in Nabha", problemId: "SIH25018", status: "Shortlisted" },
     { teamName: "Brute Forces", problemStatement: "Al-Powered Crop Yield Prediction and Optimization", problemId: "SIH25044", status: "Shortlisted" },
     { teamName: "Data Dynamos", problemStatement: "Digital Platform for Centralized Alumni Data Management and Engagement", problemId: "SIH25017", status: "Shortlisted" },
-    { teamName: "Atmanirbhar", problemStatement: "FloatChat - AI-Powered Conversational Interface for ARGO Ocean Data Discovery and Visualization", problemId: "SIH25040", status: "Shortlisted" },
+    { teamName: "CodePlay", problemStatement: "AI-Powered Personal Farming Assistant for Kerala Farmers", problemId: "SIH25074", status: "Shortlisted" },
     { teamName: "Unsteady State", problemStatement: "Improved Onion storage technology for enhancing shelf life of onions", problemId: "SIH25053", status: "Shortlisted" },
     { teamName: "Nakshatra", problemStatement: "Student Innovation: Swadeshi for Atmanirbhar Bharat - Space Technology", problemId: "SIH25142", status: "Shortlisted" },
     { teamName: "Qubits", problemStatement: "Blockchain-Based Blue Carbon Registry and MRV System", problemId: "SIH25038", status: "Shortlisted" },
