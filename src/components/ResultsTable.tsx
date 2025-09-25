@@ -90,11 +90,11 @@ export const ResultsTable = ({ searchQuery }: ResultsTableProps) => {
     { teamName: "En Passant", problemStatement: "Development of AI-powered FRA Atlas and WebGIS-based Decision Support System (DSS) for Integrated Monitoring of Forest Rights Act (FRA) Implementation. (States to be concentrated: Madhya Pradesh, Tripura , Odisha, Telangana)", problemId: "SIH12508", status: "Shortlisted" },
     { teamName: "ParadoxifY", problemStatement: "Development of a travel related software app that can be installed on mobile phones that could capture trip related information", problemId: "SIH25082", status: "Shortlisted" },
     { teamName: "Ajayya", problemStatement: "Smart Traffic Management Systern for Urban Congestion", problemId: "SIH25050", status: "Shortlisted" },
-    { teamName: "Tech Innovators", problemStatement: "Smart City Infrastructure Monitoring", problemId: "SIH25151", status: "Waitlisted" },
-    { teamName: "Future Coders", problemStatement: "AI-Based Education Assessment System", problemId: "SIH25152", status: "Waitlisted" },
-    { teamName: "Digital Pioneers", problemStatement: "Blockchain-Based Voting System", problemId: "SIH25153", status: "Waitlisted" },
-    { teamName: "Code Masters", problemStatement: "IoT-Based Environmental Monitoring", problemId: "SIH25154", status: "Waitlisted" },
-    { teamName: "Innovation Squad", problemStatement: "Machine Learning for Predictive Analytics", problemId: "SIH25155", status: "Waitlisted" }
+    { teamName: "Ctrl Alt Win", problemStatement: "Smart Traffic Management Systern for Urban Congestion", problemId: "SIH25050", status: "Waitlisted" },
+    { teamName: "Hope", problemStatement: "Al-Driven Life Cycle Assessment (LCA) Tool for Advancing Circulanty and Sustainability in Metallurgy and Mining", problemId: "SIH25069", status: "Waitlisted" },
+    { teamName: "Shadow", problemStatement: "Smart Tourist Safety Monitoring & Incident Response System using Al, Geo-Fencing, and Blockchain-based Digital ID", problemId: "SIH25002", status: "Waitlisted" },
+    { teamName: "No Clue Just Do", problemStatement: "Smart Waste Segregation and Recycling System", problemId: "SIH25046", status: "Waitlisted" },
+    { teamName: "ERROR 404 (TEAM NOT FOUND)", problemStatement: "Student Innovation: Swadeshi for Atmanirbhar Bharat - Miscellaneous", problemId: "SIH25132", status: "Waitlisted" }
   ];
 
   // Count filtered results
