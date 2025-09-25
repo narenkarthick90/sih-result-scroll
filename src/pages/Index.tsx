@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AnimatedBanner } from "@/components/AnimatedBanner";
 import { SearchFilter } from "@/components/SearchFilter";
 import { ResultsTable } from "@/components/ResultsTable";
+import logo from "../Assets/iic-logo.png";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -10,15 +11,15 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-subtle">
       {/* Header */}
       <header className="bg-card/80 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">IIC</span>
-              </div>
-              <div>
+             <div className="w-20 h-16 rounded-lg flex items-center justify-center">
+              <img src={logo} alt="IIC Logo" className="h-full w-full object-contain" />
+             </div>
+            <div> 
                 <h1 className="text-xl font-bold text-foreground">IIC-NITT</h1>
-                <p className="text-sm text-muted-foreground">Innovation Council</p>
+                <p className="text-sm text-muted-foreground ">Innovation Council</p>
               </div>
             </div>
             <div className="hidden sm:flex items-center gap-2 text-sm text-muted-foreground">
@@ -51,10 +52,10 @@ const Index = () => {
       <footer className="bg-card border-t border-border mt-16">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center space-y-4">
-            <div className="flex items-center justify-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">IIC</span>
-              </div>
+            <div className="flex items-center justify-center gap-3">
+             <div className="w-20 h-20 rounded-lg flex items-center justify-center">
+              <img src={logo} alt="IIC Logo" className="h-full w-full object-contain" />
+             </div>
               <span className="font-semibold text-foreground">Institution's Innovation Council</span>
             </div>
             <div className="text-sm text-muted-foreground">
