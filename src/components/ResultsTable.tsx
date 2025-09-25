@@ -124,7 +124,7 @@ export const ResultsTable = ({ searchQuery }: ResultsTableProps) => {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <h2 className="text-2xl font-bold text-foreground">
-                Selected Teams - SIH 2024
+                Selected Teams - SIH 2025
               </h2>
               <p className="text-muted-foreground mt-1">
                 Showing {displayedCount} of {filteredCount} results
@@ -137,7 +137,7 @@ export const ResultsTable = ({ searchQuery }: ResultsTableProps) => {
             </div>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Target className="h-4 w-4" />
-              <span>Updated: September 20, 2024</span>
+              <span>Updated: September 26, 2025</span>
             </div>
           </div>
         </CardContent>
